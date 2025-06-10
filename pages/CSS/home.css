@@ -1,0 +1,238 @@
+body {
+      margin: 0;
+      font-family: 'Poppins','sans-serif';
+      background: linear-gradient(to right, #e8e1f2, #9a8fc2);
+      color:#4a3c6b;
+      height: 100vh;
+     min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background:  linear-gradient(to right, #e8e1f2, #9a8fc2);
+        box-shadow: 0 6px 24px rgba(60, 40, 120, 0.35); /* Bolder, deeper shadow */
+  border-radius: 18 18 18px 18px; /* Optional: rounded bottom corners */
+    }
+    header, .logo, nav a {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: white;
+    font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      padding: 1rem 2rem;
+      gap: 1.5rem;
+      min-height: 400px;
+      height: calc(100vh - 120px); /* Adjust height to fill the viewport minus header/footer */
+  box-sizing: border-box;
+    }
+
+    .left-panel {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 100%;
+    }
+
+    .right-panel {
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      padding-right: 0.5rem;
+      max-height: 100%;
+    }
+
+    .divider {
+      width: 2px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 2px;
+    }
+    button {
+  background-color: black; /* Same as background */
+  color: white;              /* Text color for contrast */
+  border: 1px solid white;   /* Optional: white border */
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a37acb; /* Slightly darker on hover */
+}
+
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .button {
+      background: linear-gradient(to right, #b48cd1, #885ac3);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 0.8rem;
+    }
+
+    .emoji-row {
+      font-size: 1.8rem;
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    .emoji {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      border-radius: 50%;
+      padding: 0.2rem;
+    }
+
+    .emoji:hover {
+      transform: scale(1.3);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .emoji.selected {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(1.3);
+    }
+
+    .feeling {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .footer-bottom {
+      background:#e1d5f0;
+      color: #4a3c6b;
+
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif; 
+      font-weight:bold;
+    }
+
+.full-width-quote-section {
+      max-width: 100%;
+ width: 100%;
+  margin: 2rem 0 0 0;
+  background: rgba(255,255,255,0.15);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem 2rem 2.5rem 2rem;
+  transition: box-shadow 0.2s;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.full-width-quote-section:hover {
+  box-shadow: 0 8px 32px rgba(60, 40, 120, 0.18);
+  background: rgba(255,255,255,0.22);
+}
+
+.full-width-quote-section h2 {
+  margin-top: 0;
+  color: #4a3c6b;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.quote-slider {
+  max-width: 420px;
+  margin: 2rem auto 2rem auto;
+  background: rgba(255,255,255,0.18);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(60,40,120,0.10);
+  padding: 1.2rem 1rem 2.2rem 1rem;
+}
+.quote-slider img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  height: 180px;
+  object-fit: cover;
+}
+.quote-slider .quote {
+  font-size: 1.1rem;
+  color: #4a3c6b;
+  text-align: center;
+  font-style: italic;
+  margin: 0.5rem 0 0 0;
+}
+.quote-slider .quote span {
+  display: block;
+  font-size: 1rem;
+  color: #885ac3;
+  font-style: normal;
+  margin-top: 0.3rem;
+  font-weight: bold;
+}
+
+
+    @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    flex: none;
+    width: 100%;
+    max-height: none;
+  }
+
+  .right-panel {
+    max-height: 300px; /* Adjust scroll height on mobile */
+    overflow-y: auto;
+    margin-top: 1rem;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .right-panel h2 {
+    font-size: 1.2rem;
+  }
+}
+
