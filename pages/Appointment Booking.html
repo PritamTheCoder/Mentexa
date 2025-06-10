@@ -1,1 +1,61 @@
-// page for appointment booking
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentexa - Appointment Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* css */
+  </style>
+</head>
+<body>
+  <header>MENTEXA - Book Appointment</header>
+  <main>
+    <h1>Book Your Appointment</h1>
+
+    <label for="search">Search Doctor:</label>
+    <input type="text" id="search" placeholder="Type to search...">
+
+    <div id="doctor-list"></div>
+
+    <div class="appointment-type">
+      <div id="online" class="selected" onclick="selectType('online')">Online</div>
+      <div id="physical" onclick="selectType('physical')">Physical</div>
+    </div>
+
+    <div id="location-section" style="display:none;">
+      <label for="location">Location:</label>
+      <select id="location">
+        <option value="Kathmandu">Kathmandu</option>
+        <option value="Pokhara">Pokhara</option>
+      </select>
+    </div>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" min="2025-06-10">
+
+    <label for="time">Time:</label>
+    <select id="time">
+      <option value="">Select Time</option>
+      <option value="10:00 AM">10:00 AM</option>
+      <option value="2:00 PM">2:00 PM</option>
+      <option value="4:00 PM">4:00 PM</option>
+    </select>
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <button onclick="bookAppointment()">Book Now</button>
+
+    <div id="confirmation" style="display: none;"></div>
+    <div id="history"></div>
+  </main>
+  <script>
+    // JS
+  </script>
+</body>
+</html>
