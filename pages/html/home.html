@@ -4,21 +4,44 @@
   <meta charset="UTF-8">
   <title>Mentexa Mood Tracker</title>
   <link rel="stylesheet" href="home.css">
+  
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="../CSS/home.css">
   </head>
 <body>
 
-  <header>
-    <div class="logo">🧠 Mentexa</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Self Test</a>
-      <a href="#">Mood-Tracker</a>
-      <a href="#">About</a>
+     <header>
+        <span class="hamburger" aria-label="Toggle navigation">☰</span>
+        <div class="logo-container">
+            <img src="Mentexa (1).png" alt=" Logo" class="logo-img" >
+            <div class="logo">🧠MENTEXA</div>
+        </div>
+        <nav class="header-nav">
+            <a href="home1.html">Home</a>
+            <a href="mood-tracker.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <span class="close-btn" aria-label="Close sidebar">×</span>
+        <div class="nav-links">
+            <a href="home.html" >Home</a>
+            <a href="self-test.html">Self-Test</a>
+            <a href="mood-tracker.html">Mood Tracker</a>
+            <a href="about.html">About us</a>
+         
+        </div>
+        
     </nav>
-  </header>
+
+    <!-- Overlay for Sidebar -->
+    <div class="overlay"></div>
+    
+
+    <!-- Overlay for Sidebar -->
+    <div class="overlay"></div>
+  
 
   <div class="container">
     <div class="left-panel">
@@ -46,6 +69,7 @@
         <a href="login.html" class="button" target="_blank">Visit your mood history</a>
       </div>
     </div>
+    </body>
 
     <div class="divider"></div>
 
@@ -80,7 +104,7 @@
         <p>Take regular breaks from devices to prevent burnout and fatigue.</p>
       </div>
     </div>
-  </div> 
+  </div> <!-- End of .container -->
 
   
 
@@ -88,7 +112,7 @@
  
     <div class="quote-slider">
       <div>
-        <h2>Motivational Quotes</h2 >
+        <h2>Motivational Quotes</h2>
         <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Motivation 1"/>
         <p class="quote">"The only way to do great work is to love what you do."<br><span>- Steve Jobs</span></p>
       </div>
@@ -110,11 +134,11 @@
   <div class="footer-bottom">
     © 2025 Mentexa | Group A8 — Pritam Thapa, Avash Mainali, Isha Shrestha
   </div>
-
+<!-- ...existing code... -->
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
->
+<!-- Slick Carousel JS CDN - Place before your custom JS -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="../JS/home.js"></script>
+<script src="home.js"></script>
 </body>
 </html>
