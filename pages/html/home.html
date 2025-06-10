@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mentexa Mood Tracker</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- Slick Carousel CSS CDN - Place in head -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  </head>
+<body>
+
+  <header>
+    <div class="logo">🧠 Mentexa</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Self Test</a>
+      <a href="#">Mood-Tracker</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="left-panel">
+      <div class="card">
+        <h2>Depression Assessment</h2>
+        <p>Evaluate your mood patterns and emotional well-being with our comprehensive depression screening tool.</p>
+        <button class="button">Start Depression Test</button>
+      </div>
+      <div class="card">
+        <h2>Anxiety Assessment</h2>
+        <p>Assess your anxiety levels and gain insights with our detailed anxiety screening tool.</p>
+        <button class="button">Start Anxiety Test</button>
+      </div>
+      <div class="card">
+        <h2>Track Your Mood Today</h2>
+        <p>Click on the emoji that best represents your current mood.</p>
+        <div class="emoji-row" id="emojiRow">
+          <span class="emoji" data-mood="Neutral 😐">😐</span>
+          <span class="emoji" data-mood="Anxious 😟">😟</span>
+          <span class="emoji" data-mood="Sad 😢">😢</span>
+          <span class="emoji" data-mood="Happy 😁">😁</span>
+          <span class="emoji" data-mood="Calm 😊">😊</span>
+        </div>
+        <p class="feeling" id="moodText">You are feeling: <span>--</span></p>
+        <a href="login.html" class="button" target="_blank">Visit your mood history</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="right-panel">
+      <h2>Mental Health Recommendations</h2>
+      <div class="card">
+        <strong>Mindfulness & Meditation</strong>
+        <p>Try short meditation sessions to reduce stress and improve clarity.</p>
+      </div>
+      <div class="card">
+        <strong>Physical Activity</strong>
+        <p>Even a 20-minute walk can enhance mood and reduce anxiety levels.</p>
+      </div>
+      <div class="card">
+        <strong>Social Connection</strong>
+        <p>Reach out to a friend or family member — connection lifts spirits.</p>
+      </div>
+      <div class="card">
+        <strong>Sleep Hygiene</strong>
+        <p>Maintain a consistent sleep schedule to support mental clarity.</p>
+      </div>
+      <div class="card">
+        <strong>Gratitude Practice</strong>
+        <p>Write down three things you're thankful for each day.</p>
+      </div>
+      <div class="card">
+        <strong>Deep Breathing</strong>
+        <p>Practice deep breathing exercises to center yourself in stressful moments.</p>
+      </div>
+      <div class="card">
+        <strong>Limit Screen Time</strong>
+        <p>Take regular breaks from devices to prevent burnout and fatigue.</p>
+      </div>
+    </div>
+  </div> <!-- End of .container -->
+
+  
+
+  <div class="full-width-quote-section">
+ 
+    <div class="quote-slider">
+      <div>
+        <h2>Motivational Quotes</h2 >
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Motivation 1"/>
+        <p class="quote">"The only way to do great work is to love what you do."<br><span>- Steve Jobs</span></p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Motivation 2"/>
+        <p class="quote">"Success is not final, failure is not fatal: It is the courage to continue that counts."<br><span>- Winston Churchill</span></p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=400&q=80" alt="Motivation 3"/>
+        <p class="quote">"You are never too old to set another goal or to dream a new dream."<br><span>- C.S. Lewis</span></p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Motivation 4"/>
+        <p class="quote">"Believe you can and you're halfway there."<br><span>- Theodore Roosevelt</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Mentexa | Group A8 — Pritam Thapa, Avash Mainali, Isha Shrestha
+  </div>
+<!-- ...existing code... -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Slick Carousel JS CDN - Place before your custom JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
