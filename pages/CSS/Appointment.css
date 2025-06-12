@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,#d4c7e6, #e8e1f2); /* Gradient Background */
+    color: #333;
+}
+
+header {
+    background: #7e6aa0; /* Header color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px; /* Max width for content */
+    margin: 3rem auto; /* Center content with margin */
+    padding: 1.5rem;
+    background: #fff; /* White background for main section */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* light shadow */
+}
+
+h1, h2 {
+ color: #4a3c6b; /* Dark purple for headings */
+ text-align: center;
+ margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem; /* Spacing for labels */
+    color: #4a3c6b;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;/* light border */
+    border-radius: 5px; /* Slightly rounded edges*/
+}
+
+.appointment-type {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.appointment-type div{
+    padding: 0.5rem 1rem;
+    border: 2px solid #7e6aa0; /* Purple Border */
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer; /* Hand cursor on hover */
+}
+
+.appointment-type .selected {
+    background-color: #7e6aa0; /* Background color */
+    color: white;
+}
+
+.doctor-card {
+    background: #f3efff; /* light purple background */
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.doctor-card .selected {
+    border: 2px solid #7e6aa0; /* Highlight selected doctor */
+}
+
+button {
+    width :100%;
+    padding: 0.5rem;
+    background: #7e6aa0; /* Button Color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5c4d78; /* Darker hover color */
+}
+
+#confirmation, #history {
+    background: #f9f8ff; /* light history background */
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cancel-btn {
+    background: #ff4d4d; /* Red for cancel button */
+    margin-top: 0.5rem;
+}
+
+.cancel-btn:hover {
+    background: #cc0000; /* Darker Red on hover */
+}
+
+/* Media Queries for responsiveness */ 
+@media (max-width: 600px){
+main {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.appointment-type {
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointment-type div {
+    width: 100%;
+    align-items: center;
+}
+
+input, select, button {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+}
+
+.doctor {
+    font-size: 0.9rem;
+}
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    main{
+        max-width: 90%;
+        margin: 1.5rem auto;
+    }
+    .appointment-type {
+        gap: 0.5rem ;
+    }
+    input, select, button {
+        font-size: 0.95rem;
+    }
+}
