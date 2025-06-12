@@ -66,8 +66,7 @@
             padding-left: 1rem;
         }
 
-        li::before{
-            content:'•';
+        li::before{           
             position: absolute;
             left: 0;
             color: #7e6aa0;

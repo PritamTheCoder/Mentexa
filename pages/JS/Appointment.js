@@ -56,3 +56,10 @@ document.getElementById('search').oninput = function(){ //executes function on i
       document.getElementById(type).classList.add('selected');
       document.getElementById('location-section').style.display = type === 'physical' ? 'block' : 'none';
     }
+
+// Book Appointment 
+function bookAppointment(){
+    const type = document.querySelector('.appointment-type .selected').id;
+    const location = type === 'physical' ? document.getElementById('location').value : 'Online';
+    
+}
