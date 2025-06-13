@@ -2,7 +2,7 @@
 localStorage.setItem('isLoggedIn','true');
 
 // Redirect if not logged in
-if (localStorage.setItem('isLoggedIn') !== 'true' ) {
+if (localStorage.getItem('isLoggedIn') !== 'true' ) {
 alert('Please login first. Redirecting to login page...');
 window.location.href = 'login.html'; // link for login page
 }
@@ -14,7 +14,8 @@ document.getElementById('date').setAttribute('min', new Date().toISOString().spl
 // List of doctors
 const doctors = [
     {name : 'Dr.Leyman', speciality : 'Anxiety'},
-    {name : 'Dr.Abhishek', speciality : 'Depression'}
+    {name : 'Dr.Abhishek', speciality : 'Depression'},
+    {name : 'Dr.Lorvel', speciality : 'Anxiety & Depression'}
 ];
 let chosenDoctor = null;
 
@@ -61,5 +62,82 @@ document.getElementById('search').oninput = function(){ //executes function on i
 function bookAppointment(){
     const type = document.querySelector('.appointment-type .selected').id;
     const location = type === 'physical' ? document.getElementById('location').value : 'Online';
-    
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const today = new Date().toISOString().split('T')[0];
+
+// check email format
+if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)){ //format for email
+    alert('Please enter a valid email.');
+    return;
 }
+
+// Check all fields
+if(!chosenDoctor || !date || !time || !name || !email ){
+    alert('Please fill all fields and choose a doctor.');
+    return ;
+}
+
+// Check for future date
+if (date < today){
+    alert('Please pick a future date.');
+    return;
+}
+
+// save appointment
+const appointment = { doctor: chosenDoctor.name, speciality: chosenDoctor.speciality, type, location, date, time, name, email };
+const history = JSON.parse(localStorage.getItem('appointmentHistory')) || []; // Retrieve existing appointment history or initialize an empty array
+history.push(appointment); // add new appointment to history
+localStorage.setItem('appointmentHistory', JSON.stringify(history)); // Save updated history to localStorage
+
+// show confirmation
+document.getElementById('confirmation').style.display = 'block';
+// `` backticks to reduce need for + " " + and to add variables with ${}
+document.getElementById('confirmation').innerHTML = `   
+    <h2> Appointment Confirmed</h2>
+    <p>
+      Doctor: ${appointment.doctor} (${appointment.speciality})<br>
+      Type: ${appointment.type}, Location: ${appointment.location}<br>
+      Date: ${appointment.date}, Time: ${appointment.time}<br>
+      Name: ${appointment.name}, Email: ${appointment.email}<br>
+      <strong> Email confirmation sent to ${email}.</strong>
+      </p>
+      <button class="cancel-btn" onclick="cancelAppointment()"> Cancel Appointment</button> 
+      `;
+
+      showHistory();
+}
+
+// Cancel last appointment
+    function cancelAppointment(){
+        const history = JSON.parse(localStorage.getItem('appointmentHistory')) || [];
+        if(history.length > 0){
+            // Remove the most recent appointment
+            history.pop();
+            // Update localStorage with modified history
+            localStorage.setItem('appointmentHistory', JSON.stringify(history));
+            document.getElementById('confirmation').style.display = 'none'; // Hide the confirmation display
+            showHistory();
+            alert('Appointment Cancled!');
+        }
+    }
+
+  // show Appointment History
+  function showHistory(){
+    // Retrieve stored appointment history or initialize an empty array
+    const history = JSON.parse(localStorage.getItem('appointmentHistory')) || [];
+    const historyDiv = document.getElementById('history');
+    if (history.length === 0){ // if !appointment
+        historyDiv.innerHTML = '<h2>Appointment History</h2><p>No appointments booked yet.</p>';
+        return;
+    } 
+    // Display appointment history as a list
+    historyDiv.innerHTML = '<h2>Appointment History</h2><ul>' +
+    history.reverse().map(h => `<li>${h.date}, ${h.time} with ${h.doctor} (${h.type})</li>` ).join('') + '</ul>';
+  }  
+  
+// showing available doctors and history 
+showDoctors(doctors);
+showHistory();  

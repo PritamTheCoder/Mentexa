@@ -73,9 +73,12 @@ input, select {
     cursor: pointer;
 }
 
-.doctor-card .selected {
-    border: 2px solid #7e6aa0; /* Highlight selected doctor */
+.doctor-card.selected { /* CSS for when a doctor card is selected */
+    border: 2px solid #7e6aa0;
+    background-color: #e0d6f5;
+    font-weight: 600;
 }
+
 
 button {
     width :100%;
