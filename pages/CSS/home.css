@@ -81,7 +81,7 @@ body {
         z-index: 1001;
         top: 0;
         left: 0;
-        background: linear-gradient(to right, rgba(232, 225, 242, 0.9), rgba(154, 143, 194, 0.9));
+        background:#c1a8db;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         overflow-x: hidden;
