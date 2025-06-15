@@ -30,6 +30,24 @@ Mentexa was created as part of a Bachelor of Computer System in Information Tech
 - Google Fonts
 - No external frameworks or libraries
 
+## potential revenue streams for Mentexa
+
+**1.Freemium Model**
+    - Free basic self-assessment quizzes.
+    - Premium features like AI-driven insights and exclusive wellness content for a small fee.
+
+**2. Appointment Booking Commissions**
+    - Earn commissions from doctor appointments booked through the platform.
+
+**3. Sponsored Content & Partnerships**
+    - Collaborate with mental health organizations and wellness brands for sponsored articles and tools.
+
+**4. Affiliate Marketing**
+    - Referral commissions from therapy apps, wellness products, or online counseling platforms.
+
+**5. Corporate & Institutional Licensing**
+    - Universities and companies can pay to use Mentexa for employee or student mental health programs.
+
 ## References
 
 The self-test questions are adapted from professional psychological tools:
