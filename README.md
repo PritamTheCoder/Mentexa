@@ -8,6 +8,7 @@ Mentexa is a mental health self-check portal developed to help students and youn
 - Self-assessment quizzes based on PHQ-9 and GAD-7 tools
 - Mood tracking interface (static/visual design)
 - Motivational quotes and mental wellness tips
+- Appointment Booking platform with professional doctors
 - Fully responsive and mobile-friendly design
 - Clean, modern UI using CSS animations and transitions
 
