@@ -1,0 +1,135 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #1e1e2f;
+    }
+
+    .left-panel {
+      background-color:linear-gradient(135deg, #1e1e2f, #4b2e83);
+;
+      color: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-box {
+      max-width: 400px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2f2f40;
+      color: white;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    .form-box button.primary {
+      width: 100%;
+      background: #a8e063;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .form-box button.google {
+      width: 100%;
+      background: #2f2f40;
+      color: white;
+      border: 1px solid #444;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .form-box .signup {
+      font-size: 13px;
+      color: #ccc;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .form-box .signup a {
+      color: #f5f500;
+      text-decoration: none;
+    }
+
+    .right-panel {
+      flex: 1;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .right-panel img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .right-panel {
+        order: -1;
+        padding: 20px;
+      }
+
+      .left-panel {
+        padding: 20px;
+        align-items: center;
+      }
+
+      .form-box {
+        width: 100%;
+      }
+    }
