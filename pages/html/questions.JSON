@@ -1,5 +1,5 @@
 {
-  "depression": [
+  "phq9": [
     {
       "id": 1,
       "text": "Over the past two weeks, how often have you felt little interest or pleasure in doing things?"
@@ -38,7 +38,7 @@
     }
   ],
   
-  "anxiety": [
+  "gad7": [
     {
       "id": 1,
       "text": "Over the past two weeks, how often have you felt nervous, anxious, or on edge?"
