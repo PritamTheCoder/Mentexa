@@ -4,39 +4,39 @@ Mentexa is a mental health self-check platform created to support students and y
 Built with privacy, simplicity, and accessibility at its core, Mentexa runs entirely in the browser using HTML, CSS, and JavaScript—with no data collection or storage of any kind. It’s a safe, lightweight, and judgment-free space to explore your mental health on your own terms.
 
 ## Key Features of Mentexa
-🌐 Frontend-Only Architecture:
+- 🌐 Frontend-Only Architecture: 
 Powered entirely by HTML, CSS, and JavaScript — no backend, no databases, and zero data collection, ensuring complete privacy and peace of mind.
 
-🧠 Clinically-Informed Self-Assessments:
+- 🧠 Clinically-Informed Self-Assessments:
 Includes validated tools like PHQ-9 and GAD-7 to help users self-reflect on symptoms of anxiety and depression.
 
-📈 Mood Tracking Interface:
+- 📈 Mood Tracking Interface:
 A clean, static visual dashboard that allows users to track and observe emotional trends without storing any data.
 
-🌱 Daily Motivation & Wellness Tips:
+- 🌱 Daily Motivation & Wellness Tips:
 Uplifting quotes and practical mental health tips designed to encourage self-care and emotional resilience every day.
 
-📅 Secure Appointment Booking:
+- 📅 Secure Appointment Booking:
 Enables seamless scheduling with licensed psychologists through an intuitive and secure interface.
 
-📱 Fully Responsive & Mobile-First Design:
+- 📱 Fully Responsive & Mobile-First Design:
 Optimized for all devices — ensuring an elegant experience across smartphones, tablets, and desktops.
 
-🎨 Modern UI with Soothing Aesthetic:
+- 🎨 Modern UI with Soothing Aesthetic:
 Built using soft CSS animations and transitions for a calming, modern look and feel.
 
 ## Mentexa Color Palette
 Inspired by psychological design principles for mental wellness — our palette balances calm, clarity, and emotional safety:
 
-Primary Color: #7e6aa0 – A gentle, muted purple symbolizing introspection, balance, and healing.
+- Primary Color: #7e6aa0 – A gentle, muted purple symbolizing introspection, balance, and healing.
 
-Accent Color: #b9a9d0 – A soft lavender tone to complement the primary color with warmth and openness.
+- Accent Color: #b9a9d0 – A soft lavender tone to complement the primary color with warmth and openness.
 
-Background/Base: #f7f6fa – A clean, light tone for minimalism and mental clarity.
+- Background/Base: #f7f6fa – A clean, light tone for minimalism and mental clarity.
 
-Text/Contrast: #3e3a4f – A dark, cool grey for strong readability without harsh contrast.
+- Text/Contrast: #3e3a4f – A dark, cool grey for strong readability without harsh contrast.
 
-Highlight/Success: #a4d4ae – A muted mint green to indicate positivity and growth in subtle cues.
+- Highlight/Success: #a4d4ae – A muted mint green to indicate positivity and growth in subtle cues.
 
 This color palette not only supports a calming visual experience but also reinforces trust, accessibility, and user comfort — crucial for a mental wellness platform.
 
