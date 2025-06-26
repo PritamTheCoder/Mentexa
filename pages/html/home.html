@@ -17,7 +17,8 @@
         </div>
         <nav class="header-nav">
             <a href="home.html">Home</a>
-            <a href="login.html">Login</a>
+            <!-- toggle between Login and Log Out based on login status -->
+            <a href="javascript:void(0)" id="authLink">Login</a>
         </nav>
     </header>
 
@@ -27,11 +28,10 @@
         <div class="nav-links">
             <a href="home.html" >Home</a>
             <a href="self-test.html">Self-Test</a>
-            <a href="mood-tracker.html">Mood Tracker</a>
-            <a href="Appointment Booking.html">Book Appointment</a>
+            <a href="javascript:void(0)" id="moodTrackerLink" class="nav-links">Mood Tracker</a>
+            <a href="Appointment Booking.html" id="appointmentBookingLink" class="nav-links">Book Appointment</a> <!-- To be changed to href = "javascript:void(0)" -->
             <a href="about.html">About us</a>
         </div>
-        
     </nav>
 
     <!-- Overlay for Sidebar -->
@@ -65,7 +65,7 @@
           <span class="emoji" data-mood="Calm 😊">😊</span>
         </div>
         <p class="feeling" id="moodText">You are feeling: <span>--</span></p>
-        <a href="login.html" class="button" target="_blank">Visit your mood history</a>
+        <a href="javascript:void(0)" class="button" id="moodHistoryLink">Visit your mood history</a>
       </div>
     </div>
     </body>
