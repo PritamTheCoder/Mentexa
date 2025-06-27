@@ -1,51 +1,10 @@
-const moodTrackerLink = document.getElementById('moodTrackerLink'); // Reference to Mood Tracker link
-const appointmentBookingLink = document.getElementById('appointmentBookingLink'); // Reference to Appointment Booking link
-const authLink = document.getElementById('authLink'); // Reference to the auth link in header
-  
-  // Toggle sidebar visibility
+    // Toggle sidebar visibility
     function toggleSidebar() {
       const sidebar = document.querySelector('.sidebar');
       const overlay = document.querySelector('.overlay');
       sidebar.classList.toggle('active');
       overlay.classList.toggle('active');
     }
-
-    // Handle Mood Tracker link click with login check
-moodTrackerLink.addEventListener('click', () => {
-  const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
-  if (!isLoggedIn) {
-    window.location.href = 'login.html?redirect=mood-tracker.html';
-  } else {
-    window.location.href = 'mood-tracker.html';
-  }
-});
-
-    // Handle Appointment Booking link click with login check
-appointmentBookingLink.addEventListener('click', () => {
-  const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
-  if (!isLoggedIn) {
-    window.location.href = 'login.html?redirect=appointment-booking.html';
-  } else {
-    window.location.href = 'Appointment Booking.html';
-  }
-});
-
-// Handle auth link (Login/Logout) toggle and action
-authLink.addEventListener('click', () => {
-  const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
-  if (isLoggedIn) {
-    // Logout action
-    localStorage.removeItem('isLoggedIn');
-    sessionStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('email');
-    sessionStorage.removeItem('email');
-    updateAuthLink(); // Update link text after logout
-    alert('You have been logged out.');
-  } else {
-    // Redirect to login page
-    window.location.href = 'login.html?redirect=home.html';
-  }
-});
 
   // Get test type from URL parameter
     const urlParams = new URLSearchParams(window.location.search);
@@ -218,3 +177,45 @@ authLink.addEventListener('click', () => {
 
     // Load questions when page loads
     window.onload = () => loadQuestions();
+
+    /* const moodTrackerLink = document.getElementById('moodTrackerLink'); // Reference to Mood Tracker link
+const appointmentBookingLink = document.getElementById('appointmentBookingLink'); // Reference to Appointment Booking link
+const authLink = document.getElementById('authLink'); // Reference to the auth link in header */
+
+    /*     // Handle Mood Tracker link click with login check
+moodTrackerLink.addEventListener('click', () => {
+  const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
+  if (!isLoggedIn) {
+    window.location.href = 'login.html?redirect=mood-tracker.html';
+  } else {
+    window.location.href = 'mood-tracker.html';
+  }
+});
+
+    // Handle Appointment Booking link click with login check
+appointmentBookingLink.addEventListener('click', () => {
+  const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
+  if (!isLoggedIn) {
+    window.location.href = 'login.html?redirect=appointment-booking.html';
+  } else {
+    window.location.href = 'Appointment Booking.html';
+  }
+});
+
+// Handle auth link (Login/Logout) toggle and action
+authLink.addEventListener('click', () => {
+  const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
+  if (isLoggedIn) {
+    // Logout action
+    localStorage.removeItem('isLoggedIn');
+    sessionStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('email');
+    sessionStorage.removeItem('email');
+    updateAuthLink(); // Update link text after logout
+    alert('You have been logged out.');
+  } else {
+    // Redirect to login page
+    window.location.href = 'login.html?redirect=home.html';
+  }
+}); */
+
