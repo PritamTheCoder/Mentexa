@@ -1,6 +1,5 @@
 const emojis = document.querySelectorAll('.emoji');
 const moodText = document.getElementById('moodText');
-const moodHistoryLink = document.getElementById('moodHistoryLink'); // Reference to the mood history link
 const moodTrackerLink = document.getElementById('moodTrackerLink'); // Reference to Mood Tracker link
 const appointmentBookingLink = document.getElementById('appointmentBookingLink'); // Reference to Appointment Booking link
 const authLink = document.getElementById('authLink'); // Reference to the auth link in header
@@ -20,7 +19,7 @@ emojis.forEach(emoji => {
       moodText.innerHTML = `You are feeling: <span>${mood}</span>`;
     }
   });
-});
+}); 
 
 // Handle Mood Tracker link click with login check
 moodTrackerLink.addEventListener('click', () => {
