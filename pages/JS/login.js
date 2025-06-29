@@ -42,7 +42,7 @@ function handleLogin(event) {
   // Simulate server request (replace with actual API call)
   setTimeout(() => {
     // Added dummy user credentials
-    const validCredentials = (email === 'test@example.com' && password === 'password123') ||
+    const validCredentials = (email === 'test@gmail.com' && password === 'password123') ||
     (email === 'user@example.com' && password === 'userpass123');
     if (validCredentials) {
       // Store session/token
