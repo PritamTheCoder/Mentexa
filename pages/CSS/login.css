@@ -90,7 +90,7 @@ input[type="password"]:invalid {
 }
 
 button.primary {
-  width: 100;
+  width: 100%;
   background: #a8e063;
   border: none;
   padding: 10px;

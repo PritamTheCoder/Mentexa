@@ -45,6 +45,7 @@ function handleLogin(event) {
     const validCredentials = (email === 'test@gmail.com' && password === 'password123') ||
     (email === 'user@example.com' && password === 'userpass123');
     if (validCredentials) {
+      alert("Login successful! Redirecting..."); // temporary 
       // Store session/token
       const storage = rememberMe ? localStorage : sessionStorage;
       storage.setItem('isLoggedIn', 'true');
