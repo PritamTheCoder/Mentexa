@@ -6,12 +6,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, #d4c7e6, #e8e1f2);
-    color: #333;
+    background: #F7F9FA; /* Misty White */
+    color: #2C2C2C; /* Deep Charcoal */
 }
 
 header {
-    background: #7e6aa0;
+    background: #4A90E2; /* Serene Blue */
     color: white;
     padding: 1rem;
     text-align: center;
@@ -46,7 +46,7 @@ header {
     z-index: 1001;
     top: 0;
     left: 0;
-    background: #c1a8db;
+    background: #2C3E50; /* Calm Slate */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     overflow-x: hidden;
@@ -67,7 +67,7 @@ header {
     top: 15px;
     right: 25px;
     font-size: 36px;
-    color: #f1f1f1;
+    color: #F7F9FA; /* Misty White */
     cursor: pointer;
     text-decoration: none;
 }
@@ -91,13 +91,13 @@ header {
     padding: 15px 0;
     text-decoration: none;
     font-size: 22px;
-    color: #ffffff;
+    color: #F7F9FA; /* Misty White */
     display: block;
     transition: color 0.3s;
 }
 
 .sidebar .nav-links a:hover {
-    color: #a37acb;
+    color: #50E3C2; /* Soft Teal */
     font-weight: bold;
     text-decoration: underline;
 }
@@ -113,14 +113,14 @@ header {
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    background: linear-gradient(to right, #b48cd1, #885ac3);
+    background: linear-gradient(to right, #4A90E2, #50E3C2); /* Mood Card Gradient */
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .sidebar-auth-btn:hover {
-    background: linear-gradient(to right, #a37acb, #7a4bb0);
+    background: linear-gradient(to right, #50E3C2, #4A90E2);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: translateY(-4px);
 }
@@ -210,7 +210,7 @@ input, select {
 button {
     width: 100%;
     padding: 0.5rem;
-    background: #7e6aa0;
+    background: #4A90E2; /* Serene Blue */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -218,7 +218,7 @@ button {
 }
 
 button:hover {
-    background: #5c4d78;
+    background: #50E3C2; /* Soft Teal */
 }
 
 #confirmation, #history {
