@@ -1,6 +1,6 @@
 // Redirect to login if not logged in
 if (!localStorage.getItem('loggedInUser')) {
-  window.location.href = "../html/login.html";
+  window.location.href = "login.html";
 }
 
 // Set today's date as default
