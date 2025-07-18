@@ -145,7 +145,10 @@
     if (moodHistoryLink) {
       moodHistoryLink.addEventListener('click', function(e) {
         e.preventDefault();
+        // Use the correct relative path to mood-tracker.html
         window.location.href = "mood-tracker.html";
+        // If that doesn't work, try:
+        // window.location.href = "../html/mood-tracker.html";
       });
     }
   });
