@@ -1,0 +1,93 @@
+ .mood-tracker-container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(90,127,207,0.08);
+      padding: 2rem;
+    }
+    .mood-form label {
+      font-weight: 600;
+      color: #5a7fcf;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .mood-form input[type="date"] {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #e3f0ff;
+      background: #e3f0ff;
+      color: #2d2540;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .mood-options {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+    .mood-option {
+      font-size: 2rem;
+      cursor: pointer;
+      border-radius: 50%;
+      padding: 0.3rem 0.6rem;
+      border: 2px solid transparent;
+      transition: border 0.2s, background 0.2s;
+    }
+    .mood-option.selected {
+      border: 2px solid #5a7fcf;
+      background: #e3f0ff;
+    }
+    .mood-form textarea {
+      width: 100%;
+      min-height: 60px;
+      border-radius: 8px;
+      border: 1px solid #e3f0ff;
+      background: #e3f0ff;
+      color: #2d2540;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      resize: vertical;
+      font-family: inherit;
+    }
+    .mood-form .button {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .mood-history {
+      margin-top: 2rem;
+    }
+    .mood-history h3 {
+      color: #5a7fcf;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .mood-history-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+    .mood-history-list li {
+      background: #e3f0ff;
+      border-radius: 10px;
+      margin-bottom: 0.7rem;
+      padding: 0.7rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1rem;
+      color: #2d2540;
+      justify-content: space-between;
+    }
+    .mood-history-list .mood-emoji {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      .mood-tracker-container {
+        padding: 1rem;
+      }
+    }
