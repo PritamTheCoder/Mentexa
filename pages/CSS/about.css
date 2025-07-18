@@ -3,21 +3,21 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right,  #e6e0f8, #f5efff);
-            color: #333;
-        }
-        header{
-            position: sticky; /*makes the header "stick" to the top of the page when you scroll down*/
-            top: 0;
-            background: #4a3c6b;
-            padding: 1rem 0;
-            color: #fff;
-            text-align: center;
-            z-index: 100;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F7F9FA; /* Misty White */
+    color: #2C2C2C; /* Deep Charcoal */
+}
+header{
+    position: sticky; /*makes the header "stick" to the top of the page when you scroll down*/
+    top: 0;
+    background: #4A90E2; /* Serene Blue */
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
         header h1{
             font-size: 2rem;
@@ -29,33 +29,33 @@
             padding: 2rem 1.5rem;
         }
 
-        .section{ /* Section designing */
-            background: #ffffff;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-left: 5px solid #7e6aa0; /* Creates a solid left border of 5px */
-            border-radius: 12px; 
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
+.section{ /* Section designing */
+    background: #C7CEEA; /* Light Lavender */
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 5px solid #4A90E2; /* Serene Blue */
+    border-radius: 12px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
         .section:hover{
             transform: translateY(-5px); /* Lifts the hovered section towards Y direction by 5px */
             box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
         }
 
-        .section h2{
-            color: #4a3c6b;
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #d3c4f0;
-            padding-bottom: 0.5rem;
-        }
+.section h2{
+    color: #2C2C2C; /* Deep Charcoal */
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4A90E2; /* Serene Blue */
+    padding-bottom: 0.5rem;
+}
 
-        .section p, .section li {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 0.8rem;
-        }
+.section p, .section li {
+    font-size: 1rem;
+    color: #7F8C8D; /* Gray Whisper */
+    margin-bottom: 0.8rem;
+}
 
         ul{
             padding-left: 1.2rem;
@@ -66,21 +66,21 @@
             padding-left: 1rem;
         }
 
-        li::before{           
-            position: absolute;
-            left: 0;
-            color: #7e6aa0;
-        }
+li::before{           
+    position: absolute;
+    left: 0;
+    color: #50E3C2; /* Soft Teal */
+}
 
-        footer {
-            background: #dcd2ed;
-            padding: 1rem;
-            text-align: center;
-            color: #4a3c6b;
-            font-size: 0.95rem;
-            margin-top: 3rem;
-            border-top: 2px solid #c6b3e6;
-        }
+footer {
+    background: #2C3E50; /* Calm Slate */
+    padding: 1rem;
+    text-align: center;
+    color: #B0B8BB; /* Lighter Gray */
+    font-size: 0.95rem;
+    margin-top: 3rem;
+    border-top: 2px solid #4A90E2; /* Serene Blue */
+}
         /* Scroll Animation*/
         .fade-in {
             opacity: 0;
