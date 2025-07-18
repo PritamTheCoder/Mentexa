@@ -1,4 +1,9 @@
- // Set today's date as default
+// Redirect to login if not logged in
+if (!localStorage.getItem('loggedInUser')) {
+  window.location.href = "login.html";
+}
+
+// Set today's date as default
     document.getElementById('mood-date').valueAsDate = new Date();
 
     // Mood selection logic
