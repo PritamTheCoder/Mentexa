@@ -28,15 +28,20 @@ Built using soft CSS animations and transitions for a calming, modern look and f
 ---
 
 ## Mentexa Color Palette
-Inspired by psychological design principles for mental wellness — our palette balances calm, clarity, and emotional safety:
+Inspired by psychological design principles and modern UI aesthetics, this palette promotes calmness, trust, and clarity — essential for mental health support platforms.
 
-| Element         | Color Code | Purpose                                 |
-|----------------|------------|-----------------------------------------|
-| Primary         | `#7e6aa0`  | Muted purple for introspection & healing |
-| Accent          | `#b9a9d0`  | Soft lavender for warmth and openness    |
-| Background/Base | `#f7f6fa`  | Clean and minimal for focus              |
-| Text/Contrast   | `#3e3a4f`  | Cool grey for readability                |
-| Highlight       | `#a4d4ae`  | Mint green for positivity and growth     |
+| **Element**         | **Color**     | **Hex Code** | **Purpose**                                                                 |
+| ------------------- | ------------- | ------------ | --------------------------------------------------------------------------- |
+| **Primary**         | Muted Purple  | `#7E6AA0`    | Symbolizes calm introspection, emotional healing, and mental depth          |
+| **Accent**          | Soft Lavender | `#B9A9D0`    | Brings warmth, empathy, and a friendly, non-clinical feel                   |
+| **Background/Base** | Pale Lilac    | `#F7F6FA`    | Keeps the interface light, breathable, and distraction-free                 |
+| **Text/Contrast**   | Slate Gray    | `#3E3A4F`    | Enhances readability while maintaining a soft, non-harsh appearance         |
+| **Highlight**       | Mint Green    | `#A4D4AE`    | Signals growth, success, and mood-positive interactions                     |
+| **Sidebar BG**      | Charcoal Blue | `#2F3E46`    | Gives structure and depth without being too dark or dominant                |
+| **Sidebar Active**  | Sage Green    | `#A3B18A`    | Offers a grounding color for selected/active sidebar states                 |
+| **Buttons (CTA)**   | Warm Beige    | `#E9EDC9`    | Feels inviting and safe for actions like “Book Appointment” or “Track Mood” |
+| **Error/Alert**     | Soft Coral    | `#F8AFA6`    | Gentle way to indicate input issues without triggering anxiety              |
+
 
 This color palette not only supports a calming visual experience but also reinforces trust, accessibility, and user comfort — crucial for a mental wellness platform.
 
