@@ -35,7 +35,7 @@ moodTrackerLink.addEventListener('click', () => {
 appointmentBookingLink.addEventListener('click', () => {
   const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
   if (!isLoggedIn) {
-    window.location.href = 'login.html?redirect=appointment-booking.html';
+    window.location.href = 'login.html?redirect=Appointment Booking.html';
   } else {
     window.location.href = 'Appointment Booking.html';
   }

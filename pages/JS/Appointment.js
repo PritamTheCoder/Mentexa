@@ -1,6 +1,5 @@
-
 // Redirect if not logged in
-if (localStorage.getItem('isLoggedIn') !== 'true') {
+if (localStorage.getItem('isLoggedIn') !== 'true' && sessionStorage.getItem('isLoggedIn') !== 'true') {
     alert('Please login first. Redirecting to login page...');
     window.location.href = 'login.html'; // link for login page
 }
