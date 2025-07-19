@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mood Tracker | Mentexa</title>
-  <link rel="stylesheet" href="../../pages/CSS/home.css">
-<link rel="stylesheet" href="../../pages/CSS/mood-tracker.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="../../pictures/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../pages/CSS/home.css" />
+  <link rel="stylesheet" href="../../pages/CSS/mood-tracker.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../../pictures/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <div class="mood-tracker-container">
-    <h2 style="text-align:center;">Mood Tracker</h2>
-    <form class="mood-form" id="moodForm">
-      <label for="mood-date">Date</label>
-      <input type="date" id="mood-date" required>
+  <!-- Header -->
+  <header>
+    <span class="hamburger" aria-label="Toggle navigation">☰</span>
+    <div class="header-title">MENTEXA - Mood Tracker</div>
+  </header>
 
-      <label>Mood</label>
-      <div class="mood-options" id="moodOptions">
-        <span class="mood-option" data-mood="happy" title="Happy">&#128522;</span>
-        <span class="mood-option" data-mood="neutral" title="Neutral">&#128528;</span>
-        <span class="mood-option" data-mood="sad" title="Sad">&#128577;</span>
-        <span class="mood-option" data-mood="angry" title="Angry">&#128545;</span>
-        <span class="mood-option" data-mood="excited" title="Excited">&#129321;</span>
-      </div>
-      <div style="margin-bottom:16px; text-align:center; font-size:1em; color:#555;">
-        Happy &nbsp;|&nbsp; Neutral &nbsp;|&nbsp; Sad &nbsp;|&nbsp; Angry &nbsp;|&nbsp; Excited
-      </div>
-
-      <label for="mood-notes">Notes (optional)</label>
-      <textarea id="mood-notes" placeholder="Add any notes..."></textarea>
-
-      <button type="submit" class="button">Save Mood</button>
-    </form>
-
-    <div class="mood-history">
-      <h3>Your Mood History</h3>
-      <ul class="mood-history-list" id="moodHistoryList"></ul>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <span class="close-btn" aria-label="Close sidebar">×</span>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="self-test.html">Self-Test</a>
+      <a href="mood-tracker.html">Mood Tracker</a>
+      <a href="Appointment Booking.html">Book Appointment</a>
+      <a href="about.html">About us</a>
     </div>
-  </div>
-<script src="../JS/mood-tracker.js"></script>
-</body>
-</html>
-      <ul class="mood-history-list" id="moodHistoryList"></ul>
+    <!-- Logout Button -->
+    <a href="#" class="sidebar-auth-btn" id="auth-btn">Logout</a>
+  </nav>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <main>
+    <div class="mood-tracker-container">
+      <h2 style="text-align:center;">Mood Tracker</h2>
+      <form class="mood-form" id="moodForm">
+        <label for="mood-date">Date</label>
+        <input type="date" id="mood-date" required />
+
+        <label>Mood</label>
+        <div class="mood-options" id="moodOptions">
+          <span class="mood-option" data-mood="happy" title="Happy">&#128522;</span>
+          <span class="mood-option" data-mood="neutral" title="Neutral">&#128528;</span>
+          <span class="mood-option" data-mood="sad" title="Sad">&#128577;</span>
+          <span class="mood-option" data-mood="angry" title="Angry">&#128545;</span>
+          <span class="mood-option" data-mood="excited" title="Excited">&#129321;</span>
+        </div>
+        <div style="margin-bottom:16px; text-align:center; font-size:1em; color:#555;">
+          Happy &nbsp;|&nbsp; Neutral &nbsp;|&nbsp; Sad &nbsp;|&nbsp; Angry &nbsp;|&nbsp; Excited
+        </div>
+
+        <label for="mood-notes">Notes (optional)</label>
+        <textarea id="mood-notes" placeholder="Add any notes..."></textarea>
+
+        <button type="submit" class="button">Save Mood</button>
+      </form>
+
+      <div class="mood-history">
+        <h3>Your Mood History</h3>
+        <ul class="mood-history-list" id="moodHistoryList"></ul>
+      </div>
     </div>
-  </div>
-<script src="../JS/mood-tracker.js"></script>
+  </main>
+  <script src="../JS/mood-tracker.js"></script>
 </body>
 </html>

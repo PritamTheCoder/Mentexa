@@ -1,5 +1,3 @@
-// Set login for testing (to be removed in production)
-localStorage.setItem('isLoggedIn', 'true');
 
 // Redirect if not logged in
 if (localStorage.getItem('isLoggedIn') !== 'true') {

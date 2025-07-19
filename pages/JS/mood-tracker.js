@@ -1,3 +1,33 @@
+// Authentication check on page load
+const isLoggedIn = localStorage.getItem('isLoggedIn') || sessionStorage.getItem('isLoggedIn');
+if (!isLoggedIn) {
+  window.location.href = 'login.html?redirect=mood-tracker.html';
+}
+
+// Sidebar toggle and logout logic
+const hamburger = document.querySelector('.hamburger');
+const sidebar = document.querySelector('.sidebar');
+const closeBtn = document.querySelector('.close-btn');
+const overlay = document.querySelector('.overlay');
+const authBtn = document.getElementById('auth-btn');
+
+function toggleSidebar() {
+  sidebar.classList.toggle('active');
+  overlay.classList.toggle('active');
+}
+
+hamburger.addEventListener('click', toggleSidebar);
+closeBtn.addEventListener('click', toggleSidebar);
+overlay.addEventListener('click', toggleSidebar);
+authBtn.addEventListener('click', () => {
+  localStorage.removeItem('isLoggedIn');
+  sessionStorage.removeItem('isLoggedIn');
+  localStorage.removeItem('email');
+  sessionStorage.removeItem('email');
+  alert('You have been logged out.');
+  window.location.href = 'login.html';
+});
+
 // Set today's date as default
 document.getElementById('mood-date').valueAsDate = new Date();
 
