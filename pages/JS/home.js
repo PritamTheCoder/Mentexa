@@ -72,6 +72,7 @@ function updateAuthLink() {
   }
 }
 
+// Slick Carousel (JQuery Slider)
 $(document).ready(function() {
   $('.quote-slider').slick({
     autoplay: true,
