@@ -72,13 +72,15 @@ function updateAuthLink() {
   }
 }
 
-// Slick Carousel Initialization
-$(document).ready(function(){
+$(document).ready(function() {
   $('.quote-slider').slick({
-    arrows: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    adaptiveHeight: true
+    arrows: true,
+    fade: true,
+    adaptiveHeight: true,
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>'
   });
 });
 
