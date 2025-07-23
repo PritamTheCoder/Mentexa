@@ -56,7 +56,6 @@ Mentexa was created as part of a Bachelor of Computer System in Information Tech
 
 - **Pritam Thapa** (Reg. No.: 2024-2-08-0370)
 - **Avash Mainali** (Reg. No.: 2024-2-08-0349)
-- **Isha Shrestha** (Reg. No.: 2024-2-08-0382)
 
 ---
 
